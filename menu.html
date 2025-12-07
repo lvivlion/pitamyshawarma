@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Pita My Shawarma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="nav-gradient shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="pita-my-shawarma-logo.png" alt="Pita My Shawarma Logo" class="logo-standard">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="story.html" class="text-gray-200 hover:text-white transition-colors">Our Story</a>
+                <a href="menu.html" class="text-white font-bold border-b-2 border-white">Menu</a>
+                <a href="catering.html" class="text-gray-200 hover:text-white transition-colors">Catering</a>
+                <a href="locations.html" class="text-gray-200 hover:text-white transition-colors">Visit Us</a>
+                <a href="wine-mezze.html" class="text-purple-200 hover:text-white transition-colors font-semibold"><i
+                        class="fas fa-wine-glass-alt mr-1"></i>Wine Bar</a>
+                <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                    target="_blank"
+                    class="bg-transparent border-2 border-white text-white font-semibold px-6 py-2 rounded-full hover:scale-105 transition-all duration-300 transform animate-pulse-glow">
+                    Order Now
+                </a>
+            </div>
+            <div class="md:hidden text-white text-2xl cursor-pointer">
+                <i class="fas fa-bars" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"></i>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-white/20">
+            <a href="story.html" class="block py-2 text-gray-200 hover:text-white">Our Story</a>
+            <a href="menu.html" class="block py-2 text-white font-bold">Menu</a>
+            <a href="catering.html" class="block py-2 text-gray-200 hover:text-white">Catering</a>
+            <a href="locations.html" class="block py-2 text-gray-200 hover:text-white">Visit Us</a>
+            <a href="wine-mezze.html" class="block py-2 text-purple-200 hover:text-white font-semibold">Wine & Mezze
+                Bar</a>
+            <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                target="_blank"
+                class="block w-full mt-4 bg-transparent border-2 border-white text-white text-center font-semibold px-5 py-2 rounded-full hover:scale-105 animate-pulse-glow">
+                Order Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div class="pt-32 pb-12 bg-gradient-to-b from-gray-100 to-white text-center">
+        <h1 class="text-5xl font-display font-bold text-gray-800 mb-4 animate-float">Our Menu</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto px-4">Authentic tastes of Lebanon, prepared fresh daily in our open
+            kitchen.</p>
+    </div>
+
+    <!-- Menu Sections -->
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+
+        <!-- Family Meals -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Family Meals
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">The Shawarma Pack</h3>
+                    <p class="text-gray-600 text-sm">Feed the whole crew with 4 pita wraps, 2 large fries, hummus dip
+                        w/pitas, & 2 orders of baklava.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apps -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Apps</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Falafel Side (V+)</h3>
+                    <p class="text-gray-600 text-sm"></p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Hummus Dip & Pita</h3>
+                    <p class="text-gray-600 text-sm">Fresh, homemade hummus with two loaves of fresh pita bread.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Baba Ganoush Dip</h3>
+                    <p class="text-gray-600 text-sm">Homemade roasted eggplant dip served with fresh pita bread.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pita Wraps -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Pita Wraps
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Chicken Shawarma (Halal)</h3>
+                    <p class="text-gray-600 text-sm">Fresh, hand stacked, & rotisserie shaven chicken in a pita wrap
+                        with garlic (toum) sauce.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Falafel Wrap (V+)</h3>
+                    <p class="text-gray-600 text-sm">Fresh, made from scratch falafel in a pita wrap with a sesame
+                        (tarator) sauce.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Hummus Wrap (V)</h3>
+                    <p class="text-gray-600 text-sm">Fresh, made from scratch hummus in a pita wrap with fresh veggies.
+                    </p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">The Supreme Shawarma</h3>
+                    <p class="text-gray-600 text-sm">You gotta try our manager's special! It adds feta, fries, rice,
+                        sriracha aioli, & tomatoes to our classic chicken shawarma. It fills ya up to the brim.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">PGH Pita</h3>
+                    <p class="text-gray-600 text-sm">Our classic chicken shawarma with our halloumi cheese fries and
+                        hand-cut zataar fries added inside the wrap!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bowls & Salads -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Bowls &
+                Salads</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Chicken Shawarma & Hummus (Halal)</h3>
+                    <p class="text-gray-600 text-sm">Fresh, hand stacked, & rotisserie shaven chicken over hummus with
+                        fresh veggies.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Falafel & Hummus (V+)</h3>
+                    <p class="text-gray-600 text-sm">Freshly made falafel over hummus with fresh veggies.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Chicken Shawarma & Rice (Halal)</h3>
+                    <p class="text-gray-600 text-sm">Fresh, hand stacked, & rotisserie shaven chicken over Lebanese rice
+                        with fresh veggies and garlic (toum) sauce.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Lebanese Salad</h3>
+                    <p class="text-gray-600 text-sm">Our signature house salad with pita chips & our made from scratch
+                        pomegranate vignette.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Falafel & Rice (V+)</h3>
+                    <p class="text-gray-600 text-sm">Freshly made falafel patties over Lebanese rice with fresh veggies
+                        and our sesame (tarator) sauce.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fries -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Fries</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Loaded Chicken Shawarma Fries (Halal)</h3>
+                    <p class="text-gray-600 text-sm">Rotisserie shaven chicken on a bed of hand-cut zaatar fries with
+                        garlic sauce and parsley.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Halloumi Cheese Fries</h3>
+                    <p class="text-gray-600 text-sm">Deep fried milk cheese sticks with chili paste dipping sauce.
+                        (Cheese is naturally saltier than normal).</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Hand-cut Zaatar Fries</h3>
+                    <p class="text-gray-600 text-sm">Hand cut fries with sesame, thyme (zataar) seasoning and kosher
+                        salt.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Drinks</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Sprite Mexican Bottle</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Topo Chico</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Dasani Water</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Vimto</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Coca Cola Mexican Bottle</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Fanta Bottle</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">San Panpellegrino</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">San Panpellegrino Large</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop & Pantry -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Pantry & Shop
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Garlic Sauce (6 oz)</h3>
+                    <p class="text-gray-600 text-sm">Our house-made garlic (toum) sauce - perfect for dipping or with
+                        anything. Stored in a refrigerated container.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Shawarma Spice Blend</h3>
+                    <p class="text-gray-600 text-sm">Our proprietary, signature 7 spice blend (organic, vegan, & gluten
+                        free) - add it on your favorite protien/veggies. 11 oz stored in a spice bottle. Available for
+                        free shipping or pickup.</p>
+                </div>
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Pomegranate Vinaigrette Dressing Jar</h3>
+                    <p class="text-gray-600 text-sm">Our signature, house made pomegranate vinaigrette dressing with
+                        Lebanese pomegranate molasses.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extras & Sides -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Extras &
+                Sides</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Chicken Shawarma</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Pita</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Rice</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Pita Chips</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Garlic</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Pomegranate Vinaigrette</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Seasame</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm text-center">
+                    <h4 class="font-bold text-gray-800">Side Chili Paste</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dessert -->
+        <div class="mb-16 reveal-on-scroll">
+            <h2 class="text-3xl font-display font-bold text-teal-700 mb-6 border-b-2 border-teal-100 pb-2">Dessert</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-6 bg-white hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Baklava</h3>
+                    <p class="text-gray-600 text-sm">2 pieces of freshly made walnut baklava.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Reveal Animation
+        const scrollElements = document.querySelectorAll('.reveal-on-scroll');
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+        };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) el.classList.add('is-visible');
+            });
+        };
+        window.addEventListener('scroll', handleScrollAnimation);
+        handleScrollAnimation();
+    </script>
+</body>
+
+</html>

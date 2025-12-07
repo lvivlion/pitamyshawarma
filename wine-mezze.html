@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine & Mezze Bar - Pita My Shawarma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="night-mode bg-[#0f0518] text-gray-100 font-sans selection:bg-purple-500 selection:text-white">
+
+    <!-- Header (Night Mode Variant) -->
+    <header
+        class="nav-gradient shadow-lg shadow-purple-900/20 sticky top-0 z-50 transition-all duration-300 backdrop-blur-md bg-opacity-90">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="pita-my-shawarma-logo.png" alt="Pita My Shawarma Logo" class="logo-standard">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="story.html" class="text-gray-300 hover:text-white transition-colors tracking-wide">Our
+                    Story</a>
+                <a href="menu.html" class="text-gray-300 hover:text-white transition-colors tracking-wide">Menu</a>
+                <a href="catering.html"
+                    class="text-gray-300 hover:text-white transition-colors tracking-wide">Catering</a>
+                <a href="locations.html" class="text-gray-300 hover:text-white transition-colors tracking-wide">Visit
+                    Us</a>
+                <a href="wine-mezze.html" class="text-neon-teal font-bold"><i
+                        class="fas fa-wine-glass-alt mr-1"></i>Wine Bar</a>
+                <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                    target="_blank"
+                    class="bg-purple-600 text-white font-semibold px-6 py-2 rounded-full hover:bg-purple-700 transition-all duration-300 transform shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                    Order Now
+                </a>
+            </div>
+            <div class="md:hidden text-white text-2xl cursor-pointer hover:text-neon-purple transition-colors">
+                <i class="fas fa-bars" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"></i>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-purple-900/30 bg-[#0f0518]">
+            <a href="story.html" class="block py-3 text-gray-300 hover:text-neon-purple border-b border-gray-800">Our
+                Story</a>
+            <a href="menu.html"
+                class="block py-3 text-gray-300 hover:text-neon-purple border-b border-gray-800">Menu</a>
+            <a href="catering.html"
+                class="block py-3 text-gray-300 hover:text-neon-purple border-b border-gray-800">Catering</a>
+            <a href="locations.html"
+                class="block py-3 text-gray-300 hover:text-neon-purple border-b border-gray-800">Visit Us</a>
+            <a href="wine-mezze.html" class="block py-3 text-neon-teal font-bold border-b border-gray-800">Wine & Mezze
+                Bar</a>
+            <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                target="_blank"
+                class="block w-full mt-6 bg-purple-600 text-white text-center font-semibold px-5 py-3 rounded-full hover:scale-105 animate-pulse-glow">
+                Order Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <div class="relative min-h-[60vh] flex items-center justify-center text-center px-4 overflow-hidden pt-20 bg-cover bg-center"
+        style="background-image: url('winebarpittsburgh.jpg');">
+        <!-- Dark Overlay for readability -->
+        <div class="absolute inset-0 bg-[#0f0518]/80"></div>
+        <!-- Abstract Background Shapes -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-purple-900/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 animate-pulse">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-teal-900/10 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3">
+        </div>
+
+        <div class="relative z-10 reveal-on-scroll">
+            <p class="text-neon-teal tracking-[0.3em] mb-4 text-sm md:text-base uppercase font-bold text-shadow-glow">
+                Late Night Vibes</p>
+            <h1
+                class="text-6xl md:text-8xl font-display font-bold text-white mb-6 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                Wine <span class="text-neon-purple">&</span> Mezze
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Experience curated wines and authentic Lebanese small plates.
+            </p>
+            <div
+                class="inline-block p-6 border border-purple-500/30 rounded-2xl glass-panel bg-purple-900/10 backdrop-blur-sm shadow-[0_0_30px_rgba(168,85,247,0.15)]">
+                <span class="text-sm uppercase tracking-widest text-gray-400 block mb-2">In Partnership With</span>
+                <img src="FInal_LavenderAcres_logo.png" alt="Lavender Acres Winery"
+                    class="h-24 md:h-32 mx-auto object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 max-w-6xl mx-auto">
+
+            <!-- Wine Menu Column -->
+            <div class="reveal-on-scroll delay-100">
+                <div class="text-center mb-10">
+                    <h2 class="text-5xl font-display font-bold text-white mb-2 drop-shadow-md">Wine Menu</h2>
+                    <div class="h-1 w-24 bg-neon-purple mx-auto rounded-full shadow-[0_0_10px_#a855f7]"></div>
+                </div>
+
+                <!-- Section: Dry Reds -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl">
+                    <h3 class="text-2xl font-display text-neon-purple mb-6 border-b border-purple-500/30 pb-2">Dry Reds
+                    </h3>
+                    <ul class="space-y-3 text-center">
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Rose</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Chambourcin</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Merlot</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Cabernet Sauvignon Reserve
+                        </li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Cabernet Franc Reserve
+                        </li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Maroon Crush</li>
+                    </ul>
+                </div>
+
+                <!-- Section: Dry Whites -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl">
+                    <h3 class="text-2xl font-display text-neon-teal mb-6 border-b border-teal-500/30 pb-2">Dry Whites
+                    </h3>
+                    <ul class="space-y-3 text-center">
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Gewurztraminer</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Pinot Grigo</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Sauvignon Blanc</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Chardonnay (Naked)</li>
+                    </ul>
+                </div>
+
+                <!-- Section: Sweets -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl">
+                    <h3
+                        class="text-2xl font-display text-pink-400 mb-6 border-b border-pink-500/30 pb-2 shadow-[0_4px_4px_-4px_rgba(244,114,182,0.5)]">
+                        Sweets</h3>
+                    <ul class="space-y-3 text-center">
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Sweet Crush (Red S/S)</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">You Can Dance (Niagara)
+                        </li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Giggle Juice (Concord)
+                        </li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Chillax (Concord-Niagara)
+                        </li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Strawberry Blonde</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Blackberry Merlot</li>
+                    </ul>
+                </div>
+
+                <!-- Section: Sparkling -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl">
+                    <h3 class="text-2xl font-display text-yellow-200 mb-6 border-b border-yellow-200/30 pb-2">Sparkling
+                    </h3>
+                    <ul class="space-y-3 text-center">
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Blanc de Blanc</li>
+                        <li class="text-lg hover:text-white transition-colors cursor-default">Rose</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mezze Menu Column -->
+            <div class="reveal-on-scroll delay-300">
+                <div class="text-center mb-10">
+                    <h2 class="text-5xl font-display font-bold text-white mb-2 drop-shadow-md">Mezze Menu</h2>
+                    <div class="h-1 w-24 bg-neon-teal mx-auto rounded-full shadow-[0_0_10px_#14b8a6]"></div>
+                </div>
+
+                <!-- Section: Platters -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-purple-500/10 rounded-bl-full transition-all group-hover:bg-purple-500/20">
+                    </div>
+                    <h3
+                        class="text-2xl font-display text-white mb-8 border-b border-gray-700 pb-2 uppercase tracking-wider text-center">
+                        Platters</h3>
+
+                    <div class="space-y-8">
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold text-neon-teal mb-2">The Lebanese Charcuterie</h4>
+                            <p class="text-gray-400 text-sm">feta cheese chunks, halloumi cheese fries, lebanese green
+                                olives, fig jam, & pita chips</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold text-neon-teal mb-2">The Triple Dipper</h4>
+                            <p class="text-gray-400 text-sm">hummus, baba ganoush, & labne with pita & veggies</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold text-neon-teal mb-2">The Lebanese Deluxe</h4>
+                            <p class="text-gray-400 text-sm">halloumi cheese fries, falafel, & grapeleaves served with
+                                chili paste & seasame sauce</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold text-neon-teal mb-2">The Ultimate Sampler</h4>
+                            <p class="text-gray-400 text-sm">try it all - hummus, baba ganoush, labne, halloumi cheese,
+                                falafel & grapeleaves</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section: Dips N' At -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl">
+                    <h3
+                        class="text-2xl font-display text-white mb-6 border-b border-gray-700 pb-2 uppercase tracking-wider text-center">
+                        Dips N' At</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                        <div class="text-lg text-gray-300">Hummus & Pita Dip</div>
+                        <div class="text-lg text-gray-300">Baba Ganoush & Pita Dip</div>
+                        <div class="text-lg text-gray-300">Labne & Pita Dip</div>
+                        <div class="text-lg text-gray-300">Lebanese Green Olives</div>
+                        <div class="text-lg text-gray-300">Lebanese Mixed Nuts</div>
+                        <div class="text-lg text-gray-300">Lebanese Grapeleaves</div>
+                    </div>
+                </div>
+
+                <!-- Section: Fries N' At -->
+                <div class="mb-10 bg-night-glass p-8 rounded-2xl">
+                    <h3
+                        class="text-2xl font-display text-white mb-6 border-b border-gray-700 pb-2 uppercase tracking-wider text-center">
+                        Fries N' At</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                        <div class="text-lg text-gray-300 font-medium">Hand Cut Zataar Fries</div>
+                        <div class="text-lg text-gray-300 font-medium">Halloumi Cheese Fries</div>
+                        <div class="col-span-full text-lg text-gray-300 font-medium">Falafel Side</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Logos -->
+        <div
+            class="mt-16 flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 opacity-80 pb-10">
+            <img src="pita-my-shawarma-logo.png" alt="Pita My Shawarma Logo" class="h-20 grayscale brightness-200">
+            <span class="text-2xl font-bold text-gray-500">X</span>
+            <div class="text-center">
+                <img src="FInal_LavenderAcres_logo.png" alt="Lavender Acres Winery"
+                    class="h-20 grayscale brightness-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Events Section -->
+    <section class="py-20 bg-night-glass border-t border-purple-900/30 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-[80px]"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">Host Your Event With Us</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                From bachelorette parties to birthdays and private gatherings, elevate your celebration with our unique
+                wine and mezze experience.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+                <div class="p-6 border border-purple-500/20 rounded-xl bg-purple-900/20 backdrop-blur-sm">
+                    <i class="fas fa-glass-cheers text-4xl text-neon-teal mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Private Parties</h3>
+                    <p class="text-gray-400 text-sm">Exclusive access for you and your guests.</p>
+                </div>
+                <div class="p-6 border border-purple-500/20 rounded-xl bg-purple-900/20 backdrop-blur-sm">
+                    <i class="fas fa-birthday-cake text-4xl text-neon-purple mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Birthdays</h3>
+                    <p class="text-gray-400 text-sm">Celebrate another year in style.</p>
+                </div>
+                <div class="p-6 border border-purple-500/20 rounded-xl bg-purple-900/20 backdrop-blur-sm">
+                    <i class="fas fa-ring text-4xl text-pink-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Bachelorette</h3>
+                    <p class="text-gray-400 text-sm">Unforgettable nights for the bride-to-be.</p>
+                </div>
+            </div>
+            <a href="mailto:info@pitamyshawarma.com"
+                class="inline-block bg-transparent border-2 border-neon-purple text-neon-purple font-bold py-3 px-8 rounded-full hover:bg-neon-purple hover:text-white transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(168,85,247,0.3)]">
+                Inquire Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10 border-t border-purple-900/40">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                <a href="index.html" class="hover:text-neon-teal transition-colors">Home</a>
+                <a href="menu.html" class="hover:text-neon-teal transition-colors">Menu</a>
+                <a href="wine-mezze.html" class="text-neon-purple font-bold">Wine & Mezze</a>
+                <a href="locations.html" class="hover:text-neon-teal transition-colors">Locations</a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-neon-purple transition-colors text-2xl"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-neon-purple transition-colors text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-gray-600 text-sm">&copy; 2025 Pita My Shawarma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll Reveal Animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach((element) => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+</html>

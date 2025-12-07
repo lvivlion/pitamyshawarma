@@ -1,107 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pita My Shawarma - Modern Lebanese Street Food</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Playfair Display for headings, Inter for body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* Custom styles to extend Tailwind */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F9FAFB;
-        }
-        h1, h2, h3, .font-display {
-            font-family: 'Playfair Display', serif;
-        }
-        
-        /* Brand Colors */
-        .brand-teal { color: #02a69b; }
-        .bg-brand-teal { background-color: #02a69b; }
-        .border-brand-teal { border-color: #02a69b; }
-        .hover\:bg-brand-teal-dark:hover { background-color: #01746c; }
-        .ring-brand-teal-focus:focus { ring-color: #02a69b; }
-        
-        /* Hero Section Styling */
+        /* Inline override for specific path issue if needed, but styles.css should handle it */
         .hero-bg-image {
             background-image: url('shawarma-pittsburgh-food.jpg');
-            background-attachment: fixed; /* Parallax effect */
-            background-size: cover;
-            background-position: center;
-        }
-        
-        /* Scroll-triggered Animations */
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .reveal-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Back to top button */
-        #back-to-top {
-            transition: opacity 0.3s, transform 0.3s;
-        }
-
-        /* Order Now Button Animation */
-        @keyframes pulse-glow {
-            0%, 100% {
-                transform: scale(1);
-                box-shadow: 0 0 5px #02a69b, 0 0 10px #02a69b;
-            }
-            50% {
-                transform: scale(1.05);
-                box-shadow: 0 0 10px #02a69b, 0 0 20px #02a69b, 0 0 25px #01746c;
-            }
-        }
-        .animate-pulse-glow {
-            animation: pulse-glow 2.5s infinite ease-in-out;
-        }
-
-        /* Testimonial Carousel */
-        .testimonial-slide {
-            display: none;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .testimonial-slide.active {
-            display: grid; /* using grid for layout */
-        }
-        .dot {
-            transition: background-color 0.3s ease;
         }
     </style>
 </head>
+
 <body class="text-gray-800">
 
     <!-- Header Section -->
-    <header id="header" class="bg-gradient-to-r from-[#02a69b] to-[#01746c] shadow-md sticky top-0 z-50 transition-all duration-300">
+    <header id="header" class="nav-gradient shadow-md sticky top-0 z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
             <!-- Logo -->
-            <a href="#">
-                <img src="pita-my-shawarma-logo.png" alt="Pita My Shawarma Logo" class="h-16">
+            <a href="index.html">
+                <img src="pita-my-shawarma-logo.png" alt="Pita My Shawarma Logo" class="logo-standard">
             </a>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#our-story" class="text-gray-200 hover:text-white transition-colors">Our Story</a>
-                <a href="#menu" class="text-gray-200 hover:text-white transition-colors">Menu</a>
-                <a href="#catering" class="text-gray-200 hover:text-white transition-colors">Catering</a>
-                <a href="#locations" class="text-gray-200 hover:text-white transition-colors">Visit Us</a>
-                <a href="https://pitamyshawarma.square.site/" target="_blank" class="bg-transparent border-2 border-white text-white font-semibold px-6 py-2 rounded-full hover:scale-105 transition-all duration-300 transform animate-pulse-glow">
+                <a href="story.html" class="text-gray-200 hover:text-white transition-colors">Our Story</a>
+                <a href="menu.html" class="text-gray-200 hover:text-white transition-colors">Menu</a>
+                <a href="catering.html" class="text-gray-200 hover:text-white transition-colors">Catering</a>
+                <a href="locations.html" class="text-gray-200 hover:text-white transition-colors">Visit Us</a>
+                <!-- New Wine Bar Link -->
+                <a href="wine-mezze.html" class="text-purple-200 hover:text-white transition-colors font-semibold"><i
+                        class="fas fa-wine-glass-alt mr-1"></i>Wine Bar</a>
+
+                <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                    target="_blank"
+                    class="bg-transparent border-2 border-white text-white font-semibold px-6 py-2 rounded-full hover:scale-105 transition-all duration-300 transform animate-pulse-glow">
                     Order Now
                 </a>
             </div>
@@ -116,11 +58,15 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-white/20">
-            <a href="#our-story" class="block py-2 text-gray-200 hover:text-white">Our Story</a>
-            <a href="#menu" class="block py-2 text-gray-200 hover:text-white">Menu</a>
-            <a href="#catering" class="block py-2 text-gray-200 hover:text-white">Catering</a>
-            <a href="#locations" class="block py-2 text-gray-200 hover:text-white">Visit Us</a>
-            <a href="https://pitamyshawarma.square.site/" target="_blank" class="block w-full mt-4 bg-transparent border-2 border-white text-white text-center font-semibold px-5 py-2 rounded-full hover:scale-105 animate-pulse-glow">
+            <a href="story.html" class="block py-2 text-gray-200 hover:text-white">Our Story</a>
+            <a href="menu.html" class="block py-2 text-gray-200 hover:text-white">Menu</a>
+            <a href="catering.html" class="block py-2 text-gray-200 hover:text-white">Catering</a>
+            <a href="locations.html" class="block py-2 text-gray-200 hover:text-white">Visit Us</a>
+            <a href="wine-mezze.html" class="block py-2 text-purple-200 hover:text-white font-semibold">Wine & Mezze
+                Bar</a>
+            <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                target="_blank"
+                class="block w-full mt-4 bg-transparent border-2 border-white text-white text-center font-semibold px-5 py-2 rounded-full hover:scale-105 animate-pulse-glow">
                 Order Now
             </a>
         </div>
@@ -132,203 +78,136 @@
         <section class="hero-bg-image relative h-[70vh] md:h-[90vh] flex items-center justify-center text-white">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="relative z-10 text-center px-4 reveal-on-scroll">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-display mb-4">Authentic Lebanese Street Food</h1>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Fresh, hand-stacked shawarma, homemade falafel, and classic recipes served daily in Pittsburgh.</p>
-                <a href="https://pitamyshawarma.square.site/" target="_blank" class="bg-brand-teal text-white font-bold py-3 px-8 text-lg rounded-full hover:bg-brand-teal-dark transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-display mb-4">Authentic Lebanese Street
+                    Food</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Fresh, hand-stacked shawarma, homemade falafel, and
+                    classic recipes served daily in Pittsburgh.</p>
+                <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                    target="_blank"
+                    class="bg-brand-teal text-white font-bold py-3 px-8 text-lg rounded-full hover:bg-brand-teal-dark transition-all duration-300 transform hover:scale-105 shadow-lg">
                     Order Takeout Now
                 </a>
             </div>
         </section>
 
-        <!-- Catering & Order Online Section -->
-        <section id="catering" class="py-16 lg:py-24 bg-white">
-            <div class="container mx-auto px-6">
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <!-- Catering Card -->
-                    <div class="group relative rounded-lg overflow-hidden shadow-2xl reveal-on-scroll">
-                        <img src="Catering-left-falafel.jpg" alt="Catering Spread" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end p-8 text-center text-white">
-                            <h2 class="text-3xl lg:text-4xl font-bold font-display mb-3">Having an Event?</h2>
-                            <p class="mb-6 max-w-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Bring the best Lebanese street food to your party or office.</p>
-                            <a href="/catering" class="bg-white text-gray-800 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition-colors transform group-hover:-translate-y-4 duration-300">Book Us Today</a>
-                        </div>
+        <!-- NEW: Wine & Mezze Teaser Section -->
+        <section class="py-16 bg-gradient-to-r from-[#2d1b32] to-[#1a1a1a] text-white overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="reveal-on-scroll">
+                        <span class="text-purple-300 uppercase tracking-widest font-bold text-sm mb-2 block">New Night
+                            Concept</span>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Wine & Mezze Bar</h2>
+                        <p class="text-gray-300 text-lg mb-8">
+                            Transforming your evenings. We've partnered with <strong>Lavender Acres</strong> to bring
+                            you an exclusive selection of wines paired with our new small plates menu.
+                        </p>
+                        <a href="wine-mezze.html"
+                            class="inline-block border-2 border-purple-400 text-purple-100 font-bold py-3 px-8 rounded-full hover:bg-purple-900/50 hover:text-white transition-all duration-300">
+                            Explore the Evening Menu
+                        </a>
                     </div>
-                     <!-- Hungry Card -->
-                    <div class="group relative rounded-lg overflow-hidden shadow-2xl reveal-on-scroll" style="transition-delay: 200ms;">
-                        <img src="Catering-right.jpg" alt="Fresh Falafel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end p-8 text-center text-white">
-                            <h2 class="text-3xl lg:text-4xl font-bold font-display mb-3">Hungry Now?</h2>
-                            <p class="mb-6 max-w-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Get your favorite shawarma, bowls, and sides ready for pickup.</p>
-                            <a href="https://pitamyshawarma.square.site/" target="_blank" class="bg-brand-teal text-white font-bold py-3 px-6 rounded-full hover:bg-brand-teal-dark transition-colors transform group-hover:-translate-y-4 duration-300">Order Online</a>
+                    <!-- Teaser Image -->
+                    <div class="reveal-on-scroll transform rotate-3 hover:rotate-0 transition-all duration-500">
+                        <div class="rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                            <img src="winebarpittsburgh.jpg" class="w-full h-80 object-cover opacity-80"
+                                alt="Wine and Mezze Atmosphere">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Our Specialties Menu Section -->
+        <!-- Our Specialties Menu Section (Teaser) -->
         <section id="menu" class="py-16 lg:py-24">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-4xl lg:text-5xl font-bold font-display mb-4 reveal-on-scroll">Our Specialties</h2>
-                <p class="max-w-2xl mx-auto text-gray-600 mb-12 reveal-on-scroll">Made fresh daily with authentic recipes and the best ingredients.</p>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-12 reveal-on-scroll">Made fresh daily. Check out our full
+                    menu for more.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Menu Item 1: Chicken Shawarma -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll">
+                    <!-- Menu Item 1 -->
+                    <a href="menu.html"
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll group">
                         <img src="shawarma-pittsburgh-food.jpg" alt="Chicken Shawarma" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-2xl font-semibold font-display mb-2">Chicken Shawarma</h3>
-                            <p class="text-gray-600">Our signature hand-stacked, halal chicken, marinated in traditional spices and roasted to perfection.</p>
+                            <h3
+                                class="text-2xl font-semibold font-display mb-2 group-hover:text-brand-teal transition-colors">
+                                Chicken Shawarma</h3>
+                            <p class="text-gray-600">Our signature hand-stacked, halal chicken.</p>
+                            <span class="text-brand-teal font-bold mt-4 inline-block">See Full Menu &rarr;</span>
                         </div>
-                    </div>
-                    <!-- Menu Item 2: Falafel -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll" style="transition-delay: 200ms;">
+                    </a>
+                    <!-- Menu Item 2 -->
+                    <a href="menu.html"
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll group"
+                        style="transition-delay: 200ms;">
                         <img src="Catering-left-falafel.jpg" alt="Falafel" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-2xl font-semibold font-display mb-2">House-Made Falafel</h3>
-                            <p class="text-gray-600">Crispy on the outside, fluffy on the inside. A delicious and satisfying vegan favorite.</p>
+                            <h3
+                                class="text-2xl font-semibold font-display mb-2 group-hover:text-brand-teal transition-colors">
+                                House-Made Falafel</h3>
+                            <p class="text-gray-600">Crispy, fluffy, and completely vegan.</p>
+                            <span class="text-brand-teal font-bold mt-4 inline-block">See Full Menu &rarr;</span>
                         </div>
-                    </div>
-                    <!-- Menu Item 3: Hummus & Baba Ganoush -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll" style="transition-delay: 400ms;">
-                        <img src="Catering-right.jpg" alt="Hummus and Baba Ganoush" class="w-full h-56 object-cover">
+                    </a>
+                    <!-- Menu Item 3 -->
+                    <a href="menu.html"
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll group"
+                        style="transition-delay: 400ms;">
+                        <img src="Catering-right.jpg" alt="Dips" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-2xl font-semibold font-display mb-2">Classic Dips</h3>
-                            <p class="text-gray-600">Creamy hummus and smoky baba ganoush, perfect with a side of warm pita bread.</p>
+                            <h3
+                                class="text-2xl font-semibold font-display mb-2 group-hover:text-brand-teal transition-colors">
+                                Classic Dips</h3>
+                            <p class="text-gray-600">Hummus & Baba Ganoush.</p>
+                            <span class="text-brand-teal font-bold mt-4 inline-block">See Full Menu &rarr;</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Testimonials Section -->
-        <section class="py-16 lg:py-24 bg-brand-teal/5">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl lg:text-5xl font-bold font-display mb-12 reveal-on-scroll">What Our Customers Say</h2>
-                <div id="testimonial-carousel" class="relative">
-                    <!-- Slide 1 -->
-                    <div class="testimonial-slide active grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="text-gray-600 italic mb-4">"Absolutely the best shawarma in Pittsburgh! So fresh and flavorful. I could eat here every day."</p>
-                            <p class="font-bold">- Jessica L.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="text-gray-600 italic mb-4">"The falafel is a must-try. Perfectly crispy and the patio is a great spot to enjoy your meal."</p>
-                            <p class="font-bold">- David M.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                            <p class="text-gray-600 italic mb-4">"Great food and friendly service. The catering for our office event was a huge hit!"</p>
-                            <p class="font-bold">- Sarah K.</p>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="testimonial-slide grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="text-gray-600 italic mb-4">"A true gem in Lawrenceville. The garlic sauce is incredible and the portions are generous."</p>
-                            <p class="font-bold">- Michael B.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="text-gray-600 italic mb-4">"We keep coming back! Consistent quality and always a warm welcome. Highly recommend."</p>
-                            <p class="font-bold">- Emily R.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="text-gray-600 italic mb-4">"The best vegetarian options around. The baba ganoush is smoky and delicious."</p>
-                            <p class="font-bold">- Chloe T.</p>
-                        </div>
-                    </div>
-                    <!-- Dots -->
-                    <div class="flex justify-center space-x-3 mt-8">
-                        <button class="dot w-3 h-3 bg-brand-teal rounded-full"></button>
-                        <button class="dot w-3 h-3 bg-gray-300 rounded-full"></button>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Our Story Section -->
-        <section id="our-story" class="py-16 lg:py-24 bg-white">
+        <!-- Catering Section (Teaser) -->
+        <section id="catering" class="py-16 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="reveal-on-scroll">
-                        <img src="freshfood.jpg" alt="Pita My Shawarma Storefront" class="rounded-lg shadow-xl w-full">
+                        <img src="Catering-left-falafel.jpg" alt="Catering" class="rounded-lg shadow-xl w-full">
                     </div>
-                    <div class="reveal-on-scroll" style="transition-delay: 200ms;">
-                        <h2 class="text-4xl lg:text-5xl font-bold font-display mb-4 text-center">
-                            Welcome to<br>
-                            <span class="brand-teal">Pita My Shawarma!</span>
-                        </h2>
-                        <p class="text-gray-600 mb-4 text-lg">
-                            We bring the vibrant flavors of Lebanese street food to Lawrenceville. We specialize in authentic, (halal) Shawarma made fresh every single day. 
-                        </p>
-                        <p class="text-gray-600 mb-6">
-                           From our house-made falafel to hand-cut fries, everything is prepared to give you a delicious lunch or dinner. With indoor bar seating and a beautiful outdoor patio, our fast-casual restaurant is ready to serve you.
-                        </p>
-                        <a href="#" class="text-brand-teal font-semibold hover:underline">Read Our Full Story <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Instagram Feed Section -->
-        <section id="instagram" class="py-16 lg:py-24">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl lg:text-5xl font-bold font-display mb-4 reveal-on-scroll">Follow Us On Instagram</h2>
-                <a href="https://www.instagram.com/pitamyshawarma/?hl=en" target="_blank" rel="noopener noreferrer" class="text-2xl brand-teal hover:underline mb-12 inline-block reveal-on-scroll">@pitamyshawarma</a>
-                <div class="reveal-on-scroll max-w-3xl mx-auto">
-                    <iframe src="https://cdn.lightwidget.com/widgets/8246cebde68456578eddce0fece54b9c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden; height: 550px;"></iframe>
-                </div>
-            </div>
-        </section>
-
-         <!-- Location / Map Section -->
-        <section id="locations" class="py-16 lg:py-24 bg-white">
-            <div class="container mx-auto px-6">
-                 <div class="text-center mb-12">
-                     <h2 class="text-4xl lg:text-5xl font-bold font-display mb-4 reveal-on-scroll">Come Visit Us</h2>
-                     <p class="max-w-2xl mx-auto text-gray-600 reveal-on-scroll">We're located in the heart of Lawrenceville. Stop by for a bite!</p>
-                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="reveal-on-scroll">
-                         <div class="bg-white p-8 rounded-lg shadow-lg">
-                             <h3 class="text-2xl font-display font-bold mb-4">Address</h3>
-                             <p class="text-lg text-gray-700 mb-4">
-                                 <i class="fas fa-map-marker-alt brand-teal mr-2"></i>
-                                 3716 Butler St<br>
-                                 Pittsburgh, PA 15201
-                             </p>
-                             <h3 class="text-2xl font-display font-bold mt-6 mb-4">Hours</h3>
-                             <ul class="text-gray-700">
-                                <li><strong>Mon - Thu:</strong> 11am - 9pm</li>
-                                <li><strong>Fri - Sat:</strong> 11am - 10pm</li>
-                                <li><strong>Sunday:</strong> 12pm - 8pm</li>
-                             </ul>
-                             <a href="https://www.google.com/maps/dir/?api=1&destination=Pita+My+Shawarma+3716+Butler+St+Pittsburgh+PA" target="_blank" class="mt-6 inline-block bg-brand-teal text-white font-bold py-3 px-6 rounded-full hover:bg-brand-teal-dark transition-colors">
-                                Get Directions
-                            </a>
-                         </div>
+                        <h2 class="text-4xl font-display font-bold mb-4">Catering for Any Event</h2>
+                        <p class="text-gray-600 mb-6">
+                            Bring the taste of Lebanon to your next office lunch, wedding, or party. We make it easy and
+                            delicious.
+                        </p>
+                        <a href="catering.html"
+                            class="bg-brand-teal text-white font-bold py-3 px-6 rounded-full hover:bg-brand-teal-dark transition-colors inline-block">
+                            View Catering Options
+                        </a>
                     </div>
-                     <div class="rounded-lg overflow-hidden shadow-lg h-96 reveal-on-scroll" style="transition-delay: 200ms;">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.7001402241696!2d-79.96670682498236!3d40.45934515220215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f26629555555%3A0xe54d87c2c2f62b48!2sPita%20My%20Shawarma!5e0!3m2!1sen!2sus!4v1709146950341!5m2!1sen!2sus" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <!-- Instagram Feed Section -->
+    <section class="py-12 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-display font-bold mb-8 text-gray-800"><i
+                    class="fab fa-instagram mr-2 text-brand-teal"></i>Follow Us @pitamyshawarma</h2>
+            <!-- Lightwidget Placeholder -->
+            <div class="max-w-6xl mx-auto">
+                <!-- IMPORTANT: Replace the 'src' below with your Lightwidget embed URL or ID -->
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                <iframe src="//lightwidget.com/widgets/8216665418211940.html" scrolling="no" allowtransparency="true"
+                    class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                <p class="text-sm text-gray-500 mt-4">Don't see the feed? <a href="https://instagram.com/pitamyshawarma"
+                        target="_blank" class="text-brand-teal underline">View on Instagram</a></p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white">
@@ -336,34 +215,39 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
                 <!-- Brand -->
                 <div class="md:col-span-1">
-                     <a href="#"><img src="pita-my-shawarma-logo.png" class="h-12 mb-4 mx-auto md:mx-0" alt="Pita My Shawarma Logo"></a>
-                     <p class="text-gray-400">Authentic Lebanese Street Food in Pittsburgh, PA.</p>
+                    <a href="index.html"><img src="pita-my-shawarma-logo.png" class="h-12 mb-4 mx-auto md:mx-0"
+                            alt="Pita My Shawarma Logo"></a>
+                    <p class="text-gray-400">Authentic Lebanese Street Food in Pittsburgh, PA.</p>
                 </div>
                 <!-- Quick Links -->
                 <div>
                     <h3 class="font-bold text-lg mb-4 uppercase tracking-wider">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="/foodmenu" class="text-gray-300 hover:brand-teal">Menu</a></li>
-                        <li><a href="/catering" class="text-gray-300 hover:brand-teal">Catering</a></li>
-                        <li><a href="/jobs" class="text-gray-300 hover:brand-teal">Now Hiring!</a></li>
-                        <li><a href="/contact" class="text-gray-300 hover:brand-teal">Contact Us</a></li>
+                        <li><a href="menu.html" class="text-gray-300 hover:text-brand-teal">Menu</a></li>
+                        <li><a href="catering.html" class="text-gray-300 hover:text-brand-teal">Catering</a></li>
+                        <li><a href="wine-mezze.html" class="text-gray-300 hover:text-purple-400">Wine & Mezze</a></li>
+                        <li><a href="locations.html" class="text-gray-300 hover:text-brand-teal">Contact Us</a></li>
                     </ul>
                 </div>
-                 <!-- Contact -->
-                 <div>
+                <!-- Contact -->
+                <div>
                     <h3 class="font-bold text-lg mb-4 uppercase tracking-wider">Contact</h3>
                     <ul class="space-y-2 text-gray-300">
-                       <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>3716 Butler St, PGH</li>
-                       <li><i class="fas fa-phone fa-fw mr-2"></i><a href="tel:4122543471" class="hover:brand-teal">(412) 254-3471</a></li>
+                        <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>3716 Butler St, PGH</li>
+                        <li><i class="fas fa-phone fa-fw mr-2"></i><a href="tel:4122543471"
+                                class="hover:text-brand-teal">(412) 254-3471</a></li>
                     </ul>
                 </div>
                 <!-- Social Media -->
                 <div>
                     <h3 class="font-bold text-lg mb-4 uppercase tracking-wider">Follow Us</h3>
                     <div class="flex justify-center md:justify-start space-x-4">
-                        <a href="https://instagram.com/pitamyshawarma" target="_blank" class="text-2xl text-gray-300 hover:brand-teal"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/pitamyshawarma" target="_blank" class="text-2xl text-gray-300 hover:brand-teal"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/pitamyshawarma/" target="_blank" class="text-2xl text-gray-300 hover:brand-teal"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/pitamyshawarma" target="_blank"
+                            class="text-2xl text-gray-300 hover:text-brand-teal"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/pitamyshawarma" target="_blank"
+                            class="text-2xl text-gray-300 hover:text-brand-teal"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/pitamyshawarma/" target="_blank"
+                            class="text-2xl text-gray-300 hover:text-brand-teal"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -372,9 +256,10 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-5 right-5 bg-brand-teal text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-xl opacity-0 transform translate-y-5">
+    <button id="back-to-top"
+        class="fixed bottom-5 right-5 bg-brand-teal text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-xl opacity-0 transform translate-y-5">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -411,7 +296,7 @@
         // --- Back to Top Button ---
         const backToTopButton = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) { 
+            if (window.pageYOffset > 300) {
                 backToTopButton.classList.remove('opacity-0', 'translate-y-5');
             } else {
                 backToTopButton.classList.add('opacity-0', 'translate-y-5');
@@ -420,55 +305,8 @@
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // --- Testimonial Carousel ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const slides = document.querySelectorAll('.testimonial-slide');
-            const dots = document.querySelectorAll('.dot');
-            let currentSlide = 0;
-            let slideInterval;
-
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    slide.classList.remove('active');
-                    dots[i].classList.remove('bg-brand-teal');
-                    dots[i].classList.add('bg-gray-300');
-                });
-                slides[index].classList.add('active');
-                dots[index].classList.add('bg-brand-teal');
-                dots[index].classList.remove('bg-gray-300');
-                currentSlide = index;
-            }
-
-            function nextSlide() {
-                const newIndex = (currentSlide + 1) % slides.length;
-                showSlide(newIndex);
-            }
-
-            function startCarousel() {
-                slideInterval = setInterval(nextSlide, 5000);
-            }
-            
-            function stopCarousel() {
-                clearInterval(slideInterval);
-            }
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    stopCarousel();
-                    showSlide(index);
-                    startCarousel();
-                });
-            });
-
-            const carousel = document.getElementById('testimonial-carousel');
-            carousel.addEventListener('mouseenter', stopCarousel);
-            carousel.addEventListener('mouseleave', startCarousel);
-
-            startCarousel();
-        });
-
     </script>
 
 </body>
+
 </html>
