@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* --- Base Styles (From User Code) --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F9FAFB;
+    color: #1f2937;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Brand Colors --- */
+:root {
+    --brand-teal: #02a69b;
+    --brand-teal-dark: #01746c;
+    --color-lavender: #E6E6FA;
+    --color-wine-dark: #4a1e2c;
+}
+
+.text-brand-teal {
+    color: var(--brand-teal);
+}
+
+.bg-brand-teal {
+    background-color: var(--brand-teal);
+}
+
+.hover\:bg-brand-teal-dark:hover {
+    background-color: var(--brand-teal-dark);
+}
+
+/* --- Navigation (Gradient) --- */
+.nav-gradient {
+    background: linear-gradient(to right, #02a69b, #01746c);
+}
+
+/* --- Animations --- */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #02a69b, 0 0 10px #02a69b;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #02a69b, 0 0 20px #02a69b, 0 0 25px #01746c;
+    }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2.5s infinite ease-in-out;
+}
+
+/* --- Night Mode / Wine Bar Specifics --- */
+.night-mode {
+    background-color: #111;
+    color: #eee;
+}
+
+.night-mode .nav-gradient {
+    background: linear-gradient(to right, #2d1b32, #4a1e2c);
+    /* Wine gradient */
+}
+
+/* --- Utilities --- */
+.hero-bg-image {
+    background-image: url('../shawarma-pittsburgh-food.jpg');
+    /* Adjust path if CSS is in css/ */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Logo Standardization --- */
+.logo-standard {
+    height: 4rem;
+    /* h-16 equivalent (64px) */
+    width: auto;
+    object-fit: contain;
+    /* Removed background/border to allow transparent logo to sit on nav gradient */
+    transition: transform 0.3s ease;
+}
+
+.logo-standard:hover {
+    transform: scale(1.05);
+}
+
+/* --- Neon Night Theme --- */
+.text-neon-purple {
+    color: #d8b4fe;
+    text-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7;
+}
+
+.text-neon-teal {
+    color: #5eead4;
+    text-shadow: 0 0 5px #14b8a6, 0 0 10px #14b8a6;
+}
+
+.border-neon-purple {
+    border-color: #a855f7;
+    box-shadow: 0 0 5px #a855f7, inset 0 0 5px #a855f7;
+}
+
+.bg-night-glass {
+    background: rgba(20, 10, 30, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.night-mode body {
+    background-color: #0f0518;
+    /* Deep Purple Black */
+    background-image: radial-gradient(circle at 50% 0%, #2e1065 0%, #0f0518 70%);
+}
