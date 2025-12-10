@@ -82,7 +82,7 @@ h3,
 
 /* --- Utilities --- */
 .hero-bg-image {
-    background-image: url('../shawarma-pittsburgh-food.jpg');
+    background-image: url('../img/shawarma-pittsburgh-food.jpg');
     /* Adjust path if CSS is in css/ */
     background-attachment: fixed;
     background-size: cover;
