@@ -1,0 +1,7 @@
+# Dependencies
+node_modules/
+tailwindcss.exe
+
+# OS generated
+.DS_Store
+Thumbs.db
