@@ -13,8 +13,11 @@ function loadFooter() {
                 <div>
                     <h3 class="font-bold text-lg mb-4 uppercase tracking-wider">Quick Links</h3>
                     <ul class="space-y-2">
+                        <li><a href="story.html" class="text-gray-300 hover:text-brand-teal">Our Story</a></li>
                         <li><a href="menu.html" class="text-gray-300 hover:text-brand-teal">Menu</a></li>
                         <li><a href="catering.html" class="text-gray-300 hover:text-brand-teal">Catering</a></li>
+                        <li><a href="patio.html" class="text-gray-300 hover:text-brand-teal">Patio</a></li>
+                        <li><a href="events.html" class="text-gray-300 hover:text-brand-teal">Events</a></li>
                         <li><a href="jobs.html" class="text-gray-300 hover:text-brand-teal">Jobs</a></li>
                         <li><a href="wine-mezze.html" class="text-gray-300 hover:text-purple-400">Wine & Mezze</a></li>
                         <li><a href="locations.html" class="text-gray-300 hover:text-brand-teal">Contact Us</a></li>
