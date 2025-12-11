@@ -11,7 +11,8 @@
         content="shawarma, falafel, hummus, lebanese food, pittsburgh, lawrenceville, halal, street food">
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS (Local) -->
+    <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Font Awesome -->
@@ -71,7 +72,7 @@
                     <div class="reveal-on-scroll transform rotate-3 hover:rotate-0 transition-all duration-500">
                         <div class="rounded-xl overflow-hidden shadow-2xl border border-white/10">
                             <img src="img/winebarpittsburgh.jpg" class="w-full h-80 object-cover opacity-80"
-                                alt="Wine and Mezze Atmosphere">
+                                loading="lazy" alt="Wine and Mezze Atmosphere">
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                     <!-- Menu Item 1 -->
                     <a href="menu.html"
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll group">
-                        <img src="img/shawarma-pittsburgh-food.jpg" alt="Chicken Shawarma"
+                        <img src="img/shawarma-pittsburgh-food.jpg" alt="Chicken Shawarma" loading="lazy"
                             class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3
@@ -102,7 +103,8 @@
                     <a href="menu.html"
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll group"
                         style="transition-delay: 200ms;">
-                        <img src="img/Catering-left-falafel.jpg" alt="Falafel" class="w-full h-56 object-cover">
+                        <img src="img/Catering-left-falafel.jpg" alt="Falafel" class="w-full h-56 object-cover"
+                            loading="lazy">
                         <div class="p-6">
                             <h3
                                 class="text-2xl font-semibold font-display mb-2 group-hover:text-brand-teal transition-colors">
@@ -115,7 +117,7 @@
                     <a href="menu.html"
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 reveal-on-scroll group"
                         style="transition-delay: 400ms;">
-                        <img src="img/Catering-right.jpg" alt="Dips" class="w-full h-56 object-cover">
+                        <img src="img/Catering-right.jpg" alt="Dips" class="w-full h-56 object-cover" loading="lazy">
                         <div class="p-6">
                             <h3
                                 class="text-2xl font-semibold font-display mb-2 group-hover:text-brand-teal transition-colors">
@@ -133,7 +135,8 @@
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="reveal-on-scroll">
-                        <img src="img/Catering-left-falafel.jpg" alt="Catering" class="rounded-lg shadow-xl w-full">
+                        <img src="img/Catering-left-falafel.jpg" alt="Catering" class="rounded-lg shadow-xl w-full"
+                            loading="lazy">
                     </div>
                     <div class="reveal-on-scroll">
                         <h2 class="text-4xl font-display font-bold mb-4">Catering for Any Event</h2>
@@ -162,7 +165,8 @@
             <div class="w-full md:w-[70%] mx-auto rounded-xl overflow-hidden shadow-2xl reveal-on-scroll">
                 <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                 <iframe src="https://cdn.lightwidget.com/widgets/8246cebde68456578eddce0fece54b9c.html" scrolling="no"
-                    allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;">
+                    loading="lazy" allowtransparency="true" class="lightwidget-widget"
+                    style="width:100%;border:0;overflow:hidden;">
                 </iframe>
             </div>
             <p class="text-sm text-gray-500 mt-6 reveal-on-scroll">

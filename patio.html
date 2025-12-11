@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patio Reservations - Pita My Shawarma | Year-Round Outdoor Dining</title>
+    <meta name="description"
+        content="Enjoy year-round outdoor dining on our heated patio in Lawrenceville. Perfect for private events, parties, and BYOB dining. Book now.">
+    <meta name="keywords"
+        content="patio, outdoor dining, heater patio, lawrenceville, pittsburgh, private events, byob">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="global-header"></div>
+
+    <!-- Hero -->
+    <div class="relative h-[50vh] flex items-center justify-center text-white text-center">
+        <div class="absolute inset-0 bg-black">
+            <!-- Using shawarma-pittsburgh-food.jpg as placeholder/background for now, ideally would use a patio image -->
+            <img src="img/shawarma-pittsburgh-food.jpg" class="w-full h-full object-cover opacity-60"
+                alt="Patio Dining">
+        </div>
+        <div class="relative z-10 px-4 reveal-on-scroll">
+            <h1 class="text-5xl md:text-6xl font-display font-bold mb-4">Our Patio Oasis</h1>
+            <p class="text-xl max-w-2xl mx-auto">Sunny in Summer, Cozy in Winter</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-16 max-w-5xl">
+
+        <!-- Info & Video Grid -->
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div class="reveal-on-scroll">
+                <h2 class="text-3xl font-display font-bold text-teal-700 mb-6">Year-Round Outdoor Dining</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Pita My Shawarma offers an outdoor patio space that is sunny till the fall and heated and covered in
+                    the winter.
+                    We offer private patio reservations for your whole party for a special occasion or just a work
+                    function.
+                </p>
+
+                <div class="bg-teal-50 border-l-4 border-teal-500 p-4 mb-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-wine-bottle text-teal-600 mr-2 text-xl"></i>
+                        <h3 class="font-bold text-teal-800">Bring Your Own Bottle</h3>
+                    </div>
+                    <p class="text-teal-700 text-sm">
+                        BYOB is available for <strong>private events only</strong>! Enjoy your favorite drinks with our
+                        authentic food.
+                    </p>
+                </div>
+            </div>
+
+            <div class="reveal-on-scroll">
+                <div class="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-xl">
+                    <iframe class="w-full h-[300px] md:h-[400px]" src="https://www.youtube.com/embed/HT7M2D_gLE8"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="w-full max-w-4xl mx-auto mb-16 reveal-on-scroll">
+            <div class="bg-white rounded-xl shadow-lg p-2 md:p-6">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-display font-bold text-teal-700 mb-2">Book Your Private Event</h3>
+                    <p class="text-gray-600">Just fill out the form below to book your private reservation of our patio
+                        space any season of the year.</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <!-- Using Catering Form as a placeholder for Event Reservations as requested by flow -->
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScPIYGcizdLk7MIqr36P_DuHS65JQzSuwwBleacbaEmiSvHsw/viewform?embedded=true"
+                        width="640" height="1550" frameborder="0" marginheight="0" marginwidth="0"
+                        class="w-full max-w-[640px]" loading="lazy">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="global-footer"></div>
+    <script src="js/components.js"></script>
+    <script>
+        loadHeader('patio.html', 'standard');
+    </script>
+
+
+    <script>
+        const scrollElements = document.querySelectorAll('.reveal-on-scroll');
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+        };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) el.classList.add('is-visible');
+            });
+        };
+        window.addEventListener('scroll', handleScrollAnimation);
+        handleScrollAnimation();
+    </script>
+</body>
+
+</html>

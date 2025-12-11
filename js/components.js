@@ -6,7 +6,7 @@ function loadFooter() {
                 <!-- Brand -->
                 <div class="md:col-span-1">
                     <a href="index.html"><img src="img/pita-my-shawarma-logo.png" class="h-12 mb-4 mx-auto md:mx-0"
-                            alt="Pita My Shawarma Logo"></a>
+                            alt="Pita My Shawarma Logo" loading="lazy"></a>
                     <p class="text-gray-400">Authentic Lebanese Street Food in Pittsburgh, PA.</p>
                 </div>
                 <!-- Quick Links -->
@@ -15,6 +15,7 @@ function loadFooter() {
                     <ul class="space-y-2">
                         <li><a href="menu.html" class="text-gray-300 hover:text-brand-teal">Menu</a></li>
                         <li><a href="catering.html" class="text-gray-300 hover:text-brand-teal">Catering</a></li>
+                        <li><a href="jobs.html" class="text-gray-300 hover:text-brand-teal">Jobs</a></li>
                         <li><a href="wine-mezze.html" class="text-gray-300 hover:text-purple-400">Wine & Mezze</a></li>
                         <li><a href="locations.html" class="text-gray-300 hover:text-brand-teal">Contact Us</a></li>
                     </ul>
@@ -109,6 +110,9 @@ function loadHeader(activePage, theme = 'standard') {
                 <a href="menu.html" class="${getLinkClass('menu.html')}">Menu</a>
                 <a href="catering.html" class="${getLinkClass('catering.html')}">Catering</a>
                 <a href="locations.html" class="${getLinkClass('locations.html')}">Visit Us</a>
+                <a href="patio.html" class="${getLinkClass('patio.html')}">Patio</a>
+                <a href="events.html" class="${getLinkClass('events.html')}">Events</a>
+                <a href="jobs.html" class="${getLinkClass('jobs.html')}">Jobs</a>
                 
                 <!-- Wine Bar Link -->
                 <a href="wine-mezze.html" class="${getWineLinkClass()}">
@@ -136,6 +140,9 @@ function loadHeader(activePage, theme = 'standard') {
             <a href="menu.html" class="block py-2 ${getLinkClass('menu.html')}">Menu</a>
             <a href="catering.html" class="block py-2 ${getLinkClass('catering.html')}">Catering</a>
             <a href="locations.html" class="block py-2 ${getLinkClass('locations.html')}">Visit Us</a>
+            <a href="patio.html" class="block py-2 ${getLinkClass('patio.html')}">Patio</a>
+            <a href="events.html" class="block py-2 ${getLinkClass('events.html')}">Events</a>
+            <a href="jobs.html" class="block py-2 ${getLinkClass('jobs.html')}">Jobs</a>
             <a href="wine-mezze.html" class="block py-2 ${getWineLinkClass()}">Wine & Mezze Bar</a>
             <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
                 target="_blank"

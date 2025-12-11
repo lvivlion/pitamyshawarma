@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles from styles.css can be moved here or kept separate if complex */
+/* For now, we keep existing styles.css and just use this for Tailwind utilities */
