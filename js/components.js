@@ -122,10 +122,11 @@ function loadHeader(activePage, theme = 'standard') {
                     <i class="fas fa-wine-glass-alt mr-1"></i>Wine Bar
                 </a>
 
-                <button onclick="openOrderModal()" data-order-trigger
+                <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                    target="_blank"
                     class="${buttonClasses}">
                     Order Now
-                </button>
+                </a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -146,10 +147,11 @@ function loadHeader(activePage, theme = 'standard') {
             <a href="events.html" class="block py-2 ${getLinkClass('events.html')}">Events</a>
             <a href="jobs.html" class="block py-2 ${getLinkClass('jobs.html')}">Jobs</a>
             <a href="wine-mezze.html" class="block py-2 ${getWineLinkClass()}">Wine & Mezze Bar</a>
-            <button onclick="openOrderModal()" data-order-trigger
+            <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                target="_blank"
                 class="${mobileButtonClasses}">
                 Order Now
-            </button>
+            </a>
         </div>
     </header>
     `;
