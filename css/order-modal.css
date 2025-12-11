@@ -42,6 +42,52 @@
     visibility: visible;
 }
 
+/* Mobile-only floating close button */
+.order-modal-close-mobile {
+    display: none;
+    /* Hidden on desktop by default */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+}
+
+.order-modal-close-mobile:active {
+    transform: scale(0.95);
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* Show close button only on mobile/tablet */
+@media (max-width: 1024px) {
+    .order-modal-close-mobile {
+        display: flex;
+    }
+}
+
+/* Smaller button on very small screens */
+@media (max-width: 480px) {
+    .order-modal-close-mobile {
+        width: 44px;
+        height: 44px;
+        top: 15px;
+        right: 15px;
+        font-size: 1.25rem;
+    }
+}
+
 /* Modal Body - iframe container (full modal space, no header) */
 .order-modal-body {
     width: 100%;

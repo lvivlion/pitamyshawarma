@@ -38,8 +38,11 @@ class OrderModal {
         this.modal.setAttribute('aria-modal', 'true');
         this.modal.setAttribute('aria-labelledby', 'order-modal-title');
 
-        // Modal HTML structure - NO HEADER, just iframe
+        // Modal HTML structure - NO HEADER, just iframe + mobile close button
         this.modal.innerHTML = `
+            <button class="order-modal-close-mobile" aria-label="Close ordering">
+                <i class="fas fa-times"></i>
+            </button>
             <div class="order-modal-body">
                 <div class="order-modal-loading">
                     <div class="order-modal-spinner"></div>
@@ -65,6 +68,12 @@ class OrderModal {
     }
 
     setupEventListeners() {
+        // Mobile close button
+        const mobileCloseBtn = this.modal.querySelector('.order-modal-close-mobile');
+        if (mobileCloseBtn) {
+            mobileCloseBtn.addEventListener('click', () => this.close());
+        }
+
         // Overlay click to close
         this.overlay.addEventListener('click', () => this.close());
 
