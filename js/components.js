@@ -27,7 +27,7 @@ function loadFooter() {
                 <div>
                     <h3 class="font-bold text-lg mb-4 uppercase tracking-wider">Contact</h3>
                     <ul class="space-y-2 text-gray-300">
-                        <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>3716 Butler St, PGH</li>
+                        <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i><a href="https://www.google.com/maps/search/?api=1&query=Pita+My+Shawarma+3716+Butler+St+Pittsburgh+PA+15201" target="_blank" class="hover:text-brand-teal">3716 Butler St, PGH</a></li>
                         <li><i class="fas fa-phone fa-fw mr-2"></i><a href="tel:4122543471"
                                 class="hover:text-brand-teal">(412) 254-3471</a></li>
                     </ul>
