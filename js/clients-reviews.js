@@ -120,9 +120,15 @@ function loadClientsReviews() {
     `;
 
     // Inject into index.html if the container exists
-    // We expect a container with id="clients-reviews-container"
+    // We expect a container with id="clients-reviews-container" for logos
     const container = document.getElementById('clients-reviews-container');
     if (container) {
-        container.innerHTML = featuredHTML + clientsHTML + reviewsHTML;
+        container.innerHTML = featuredHTML + clientsHTML;
+    }
+
+    // Inject Reviews into separate container
+    const reviewsContainer = document.getElementById('reviews-container');
+    if (reviewsContainer) {
+        reviewsContainer.innerHTML = reviewsHTML;
     }
 }
