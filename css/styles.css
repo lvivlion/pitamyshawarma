@@ -131,3 +131,86 @@ h3,
     /* Deep Purple Black */
     background-image: radial-gradient(circle at 50% 0%, #2e1065 0%, #0f0518 70%);
 }
+
+/* --- Text Utilities --- */
+.text-shadow-strong {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9), 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Marquee Animation --- */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    width: max-content;
+    animation: marquee 60s linear infinite;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Reverse Marquee for Reviews if desired, or just standard */
+.marquee-reverse .marquee-content {
+    animation: marquee-reverse 80s linear infinite;
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* --- Manual Transform Classes (Polyfill for missing Tailwind classes) --- */
+.translate-x-0 {
+    transform: translateX(0) !important;
+}
+
+.translate-x-full {
+    transform: translateX(100%) !important;
+}
+
+.-translate-x-full {
+    transform: translateX(-100%) !important;
+}
+
+/* Ensure absolute positioning works for slides */
+.absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Manual Hover Scale for Client Logos - Removed */
+
+.transform {
+    transform-origin: center;
+    /* Ensure hardware acceleration for smooth transform */
+    backface-visibility: hidden;
+}

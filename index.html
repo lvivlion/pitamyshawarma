@@ -83,14 +83,9 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
 
-    <style>
-        /* Inline override for specific path issue if needed, but styles.css should handle it */
-        .hero-bg-image {
-            background-image: url('img/shawarma-pittsburgh-food.jpg');
-        }
-    </style>
+
 </head>
 
 <body class="text-gray-800">
@@ -102,20 +97,112 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero-bg-image relative h-[70vh] md:h-[90vh] flex items-center justify-center text-white">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative z-10 text-center px-4 reveal-on-scroll">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-display mb-4">Authentic Lebanese Street
-                    Food</h1>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Fresh, hand-stacked shawarma, homemade falafel, and
-                    classic recipes served daily in Pittsburgh.</p>
-                <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
-                    target="_blank"
-                    class="bg-brand-teal text-white font-bold py-3 px-8 text-lg rounded-full hover:bg-brand-teal-dark transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    Order Takeout Now
-                </a>
+        <!-- Hero Section -->
+        <!-- Hero Section -->
+        <!-- Hero Section -->
+        <section
+            class="relative h-[70vh] md:h-[90vh] flex items-center justify-center text-white overflow-hidden bg-black">
+
+            <!-- Slide 1: Day -->
+            <div id="hero-slide-1"
+                class="absolute inset-0 transition-transform duration-[2000ms] ease-in-out z-10 translate-x-0">
+                <!-- Background Image -->
+                <!-- Background Image -->
+                <img src="img/banner-1-homepage-chicken-fries.png"
+                    alt="Best Chicken Shawarma and Fries in Pittsburgh - Pita My Shawarma"
+                    class="absolute inset-0 w-full h-full object-cover object-center" fetchpriority="high">
+                <!-- Overlay with Gradient for Readability -->
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                <!-- Content -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center px-4 max-w-4xl pt-16">
+                        <div class="inline-block p-4 rounded-xl bg-black/20 backdrop-blur-[2px]">
+                            <h1
+                                class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-display mb-6 leading-tight text-shadow-strong">
+                                Lebanese Pita Bar <br /> by day
+                            </h1>
+                            <p
+                                class="text-lg md:text-2xl max-w-2xl mx-auto mb-8 font-light text-shadow-strong text-gray-100">
+                                Fresh, hand-stacked shawarma, homemade falafel, and classic recipes served daily.
+                            </p>
+                        </div>
+                        <br />
+                        <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
+                            target="_blank"
+                            class="inline-block bg-brand-teal text-white font-bold py-3 px-8 text-lg rounded-full hover:bg-brand-teal-dark transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl ring-2 ring-brand-teal ring-opacity-50 mt-4">
+                            Order Takeout Now
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Slide 2: Night -->
+            <div id="hero-slide-2"
+                class="absolute inset-0 transition-transform duration-[2000ms] ease-in-out z-10 translate-x-full">
+                <!-- Background Image -->
+                <!-- Background Image -->
+                <img src="img/banner-2-homepage-wine.png" alt="Wine Bar and Mezze Platter in Lawrenceville Pittsburgh"
+                    class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#2d1b32]/90 via-[#2d1b32]/40 to-black/30"></div>
+                <!-- Content -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center px-4 max-w-4xl pt-16">
+                        <h1
+                            class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-display mb-6 leading-tight text-shadow-strong text-purple-100">
+                            <span class="whitespace-nowrap">Wine & Mezze Bar</span> <br /> by night
+                        </h1>
+                        <p
+                            class="text-lg md:text-2xl max-w-2xl mx-auto mb-8 font-light text-shadow-strong text-purple-50">
+                            Exclusive wines paired with our new small plates menu in a relaxed atmosphere.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a href="wine-mezze.html"
+                                class="inline-block bg-purple-600 text-white font-bold py-2 px-6 text-base rounded-full hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl">
+                                Explore Menu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toggle Buttons Overlay (Top Right) -->
+            <div class="absolute top-24 right-4 md:top-32 md:right-10 z-30 flex flex-col items-center space-y-4">
+                <!-- Countdown Timer / Slide Indicator -->
+                <div class="relative w-12 h-12 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform"
+                    onclick="nextSlide()">
+                    <svg class="w-full h-full transform -rotate-90">
+                        <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="4" fill="transparent"
+                            class="text-white/20" />
+                        <circle id="countdown-circle" cx="24" cy="24" r="20" stroke="currentColor" stroke-width="4"
+                            fill="transparent" class="text-brand-teal transition-all duration-100"
+                            stroke-dasharray="126" stroke-dashoffset="0" stroke-linecap="round" />
+                    </svg>
+                    <i class="fas fa-play text-xs text-white absolute"></i>
+                </div>
+            </div>
+
+            <!-- Left Arrow -->
+            <!-- Left Arrow -->
+            <button onclick="nextSlide()"
+                class="absolute z-50 p-3 md:p-4 rounded-full bg-black/40 hover:bg-black/60 text-white transition-all duration-300 hover:scale-110 focus:outline-none"
+                style="left: 1rem; top: 50%; transform: translateY(-50%);">
+                <i class="fas fa-chevron-left text-xl md:text-2xl"></i>
+            </button>
+
+            <!-- Right Arrow -->
+            <!-- Right Arrow -->
+            <button onclick="nextSlide()"
+                class="absolute z-50 p-3 md:p-4 rounded-full bg-black/40 hover:bg-black/60 text-white transition-all duration-300 hover:scale-110 focus:outline-none"
+                style="right: 1rem; top: 50%; transform: translateY(-50%);">
+                <i class="fas fa-chevron-right text-xl md:text-2xl"></i>
+            </button>
+
         </section>
+
+        <!-- Dynamic Clients & Reviews Section -->
+        <div id="clients-reviews-container"></div>
+        <!-- End Dynamic Section -->
 
         <!-- NEW: Wine & Mezze Teaser Section -->
         <section class="py-16 bg-gradient-to-r from-[#2d1b32] to-[#1a1a1a] text-white overflow-hidden relative">
@@ -222,6 +309,10 @@
 
     </main>
 
+    <!-- Dynamic Clients & Reviews Section -->
+
+    <!-- End Dynamic Section -->
+
     <!-- Instagram Feed Section -->
     <section class="py-16 bg-gray-50 border-t border-gray-100">
         <div class="container mx-auto px-6 text-center">
@@ -242,6 +333,8 @@
             </p>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <div id="global-footer"></div>
@@ -272,20 +365,140 @@
         // Trigger on load as well
         handleScrollAnimation();
 
-        // --- Back to Top Button ---
-        const backToTopButton = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'translate-y-5');
-            } else {
-                backToTopButton.classList.add('opacity-0', 'translate-y-5');
+
+
+        // --- Hero Carousel & Countdown ---
+        let currentSlide = 1;
+        let slideInterval;
+        const slideDuration = 6000; // 6 seconds
+        const circleParams = {
+            element: null,
+            circumference: 126 // 2 * pi * r (approx 2 * 3.14159 * 20)
+        };
+
+        function startSlideTimer() {
+            clearInterval(slideInterval);
+
+            const circle = document.getElementById('countdown-circle');
+            if (circle) {
+                // Reset animation
+                circle.style.transition = 'none';
+                circle.style.strokeDashoffset = '0';
+
+                // Force triggering reflow
+                void circle.offsetWidth;
+
+                // Start animation
+                circle.style.transition = `stroke-dashoffset ${slideDuration}ms linear`;
+                circle.style.strokeDashoffset = '126';
             }
+
+            slideInterval = setInterval(nextSlide, slideDuration);
+        }
+
+        function setHeroSlide(slideIndex) {
+            showSlide(slideIndex);
+            startSlideTimer(); // Reset timer on manual interaction
+        }
+
+        function showSlide(slideIndex) {
+            const slide1 = document.getElementById('hero-slide-1');
+            const slide2 = document.getElementById('hero-slide-2');
+
+            if (!slide1 || !slide2) return;
+
+            // Reset transitions to ensure smooth handling
+            slide1.style.transition = 'transform 2000ms ease-in-out';
+            slide2.style.transition = 'transform 2000ms ease-in-out';
+
+            if (slideIndex === 1) {
+                // Moving 2 -> 1
+                // Standard carousel: 1 comes from Right (if we cycled) or we just swap
+                // But specifically "left to right" usually means entering from right, moving left.
+                // Current state: 2 is Center, 1 might be Left.
+                // If 1 is Left (-100%), move 1 to Center (0%), move 2 to Right (100%) or Left?
+                // Text direction "Smooth transition left to right" -> Maybe they mean the CONTENT moves Left -> Right?
+                // Or the wipe is Left -> Right?
+                // Let's stick to standard slide Left (content moves right-to-left physically).
+
+                // If we are showing Slide 1, and currently at Slide 2.
+                // Slide 2 exits to Left (-100%), Slide 1 enters from Right (+100%).
+
+                // Pre-position Slide 1 at Right if it's not there
+                if (currentSlide === 2) {
+                    slide1.style.transition = 'none';
+                    slide1.classList.remove('-translate-x-full', 'translate-x-0');
+                    slide1.classList.add('translate-x-full');
+                    // Force reflow
+                    void slide1.offsetWidth;
+                    slide1.style.transition = 'transform 2000ms ease-in-out';
+
+                    // Animate
+                    slide2.classList.remove('translate-x-0');
+                    slide2.classList.add('-translate-x-full'); // 2 goes Left
+
+                    slide1.classList.remove('translate-x-full');
+                    slide1.classList.add('translate-x-0'); // 1 goes Center
+                } else {
+                    // Initial load state or stay same??
+                    slide1.classList.remove('translate-x-full', '-translate-x-full');
+                    slide1.classList.add('translate-x-0');
+                    slide2.classList.remove('translate-x-0', '-translate-x-full');
+                    slide2.classList.add('translate-x-full');
+                }
+
+                currentSlide = 1;
+            } else {
+                // Moving 1 -> 2
+                // Slide 1 exits Left (-100%), Slide 2 enters from Right (+100%)
+
+                // Pre-position Slide 2 at Right if it isn't
+                if (currentSlide === 1) {
+                    slide2.style.transition = 'none';
+                    slide2.classList.remove('-translate-x-full', 'translate-x-0');
+                    slide2.classList.add('translate-x-full');
+                    // Force reflow
+                    void slide2.offsetWidth;
+                    slide2.style.transition = 'transform 2000ms ease-in-out';
+
+                    // Animate
+                    slide1.classList.remove('translate-x-0');
+                    slide1.classList.add('-translate-x-full'); // 1 goes Left
+
+                    slide2.classList.remove('translate-x-full');
+                    slide2.classList.add('translate-x-0'); // 2 goes Center
+                }
+
+                currentSlide = 2;
+            }
+        }
+
+        function nextSlide() {
+            const next = currentSlide === 1 ? 2 : 1;
+            showSlide(next);
+            startSlideTimer(); // Restart timer for next slide
+        }
+
+        // Initialize Carousel
+        document.addEventListener('DOMContentLoaded', () => {
+            const circle = document.getElementById('countdown-circle');
+            if (circle) {
+                // Initialize dasharray
+                circle.style.strokeDasharray = '126';
+                circle.style.strokeDashoffset = '0';
+            }
+            startSlideTimer();
         });
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+
+        // Make function global for onclick handlers
+        window.setHeroSlide = setHeroSlide;
+        window.nextSlide = nextSlide;
+
+
     </script>
 
+    <script src="js/clients-reviews.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", loadClientsReviews);</script>
 </body>
 
 </html>

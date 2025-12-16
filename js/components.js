@@ -108,7 +108,7 @@ function loadHeader(activePage, theme = 'standard') {
             </a>
 
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-4 lg:space-x-8 whitespace-nowrap">
                 <a href="story.html" class="${getLinkClass('story.html')}">Our Story</a>
                 <a href="menu.html" class="${getLinkClass('menu.html')}">Menu</a>
                 <a href="catering.html" class="${getLinkClass('catering.html')}">Catering</a>
