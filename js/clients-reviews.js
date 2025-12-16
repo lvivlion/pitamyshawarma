@@ -7,10 +7,10 @@ function loadClientsReviews() {
         const clientCount = 20; // 15 to 34 based on file naming 
         // 15.png to 34.png
 
-        // We repeat the loop twice to ensure smooth marquee
-        for (let j = 0; j < 2; j++) {
+        // We repeat the loop 4 times to ensure smooth infinite marquee
+        for (let j = 0; j < 4; j++) {
             for (let i = 15; i <= 34; i++) {
-                html += `<img src="img/clients/${i}.png" class="h-12 md:h-24 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-6 md:mx-12" alt="Client Logo ${i}">`;
+                html += `<img src="img/clients/${i}.png" class="h-24 md:h-48 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-12 md:mx-24" alt="Client Logo ${i}">`;
             }
         }
         return html;
@@ -20,9 +20,9 @@ function loadClientsReviews() {
     const generateFeaturedImages = () => {
         let html = '';
         // 1.png to 14.png
-        for (let j = 0; j < 2; j++) {
+        for (let j = 0; j < 4; j++) {
             for (let i = 1; i <= 14; i++) {
-                html += `<img src="img/featuredon/${i}.png" class="h-12 md:h-24 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-6 md:mx-12" alt="Featured On Logo ${i}">`;
+                html += `<img src="img/featuredon/${i}.png" class="h-24 md:h-48 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-12 md:mx-24" alt="Featured On Logo ${i}">`;
             }
         }
         return html;
@@ -78,7 +78,7 @@ function loadClientsReviews() {
              <p class="text-gray-400 uppercase tracking-widest text-xs font-bold">Featured On</p>
         </div>
         <div class="marquee-container">
-            <div class="marquee-content items-center">
+            <div class="marquee-content items-center" style="animation-duration: 160s;">
                 ${generateFeaturedImages()}
             </div>
         </div>
@@ -92,7 +92,7 @@ function loadClientsReviews() {
              <p class="text-gray-400 uppercase tracking-widest text-xs font-bold">Clients & Friends</p>
         </div>
         <div class="marquee-container">
-            <div class="marquee-content items-center">
+            <div class="marquee-content items-center" style="animation-duration: 160s;">
                 ${generateClientImages()}
             </div>
         </div>
