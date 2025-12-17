@@ -5,7 +5,7 @@ function loadFooter() {
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
                 <!-- Brand -->
                 <div class="md:col-span-1">
-                    <a href="index.html"><img src="img/pita-my-shawarma-logo.png" class="h-12 mb-4 mx-auto md:mx-0"
+                    <a href="index.html"><img src="img/pita-my-shawarma-logo.webp" class="h-12 mb-4 mx-auto md:mx-0"
                             alt="Pita My Shawarma Logo" loading="lazy"></a>
                     <p class="text-gray-400">Authentic Lebanese Street Food in Pittsburgh, PA.</p>
                 </div>
@@ -104,7 +104,7 @@ function loadHeader(activePage, theme = 'standard') {
         <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
             <!-- Logo -->
             <a href="index.html">
-                <img src="img/pita-my-shawarma-logo.png" alt="Pita My Shawarma Logo" class="logo-standard">
+                <img src="img/pita-my-shawarma-logo.webp" alt="Pita My Shawarma Logo" class="logo-standard">
             </a>
 
             <!-- Desktop Menu -->

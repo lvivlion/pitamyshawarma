@@ -10,7 +10,7 @@ function loadClientsReviews() {
         // We repeat the loop 4 times to ensure smooth infinite marquee
         for (let j = 0; j < 4; j++) {
             for (let i = 15; i <= 34; i++) {
-                html += `<img src="img/clients/${i}.png" loading="lazy" class="h-24 md:h-48 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-12 md:mx-24" alt="Client Logo ${i}">`;
+                html += `<img src="img/clients/${i}.webp" loading="lazy" class="h-24 md:h-48 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-12 md:mx-24" alt="Client Logo ${i}">`;
             }
         }
         return html;
@@ -22,7 +22,7 @@ function loadClientsReviews() {
         // 1.png to 14.png
         for (let j = 0; j < 4; j++) {
             for (let i = 1; i <= 14; i++) {
-                html += `<img src="img/featuredon/${i}.png" loading="lazy" class="h-24 md:h-48 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-12 md:mx-24" alt="Featured On Logo ${i}">`;
+                html += `<img src="img/featuredon/${i}.webp" loading="lazy" class="h-24 md:h-48 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 mx-12 md:mx-24" alt="Featured On Logo ${i}">`;
             }
         }
         return html;
