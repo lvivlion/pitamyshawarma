@@ -81,13 +81,7 @@ h3,
 }
 
 /* --- Utilities --- */
-.hero-bg-image {
-    background-image: url('../img/shawarma-pittsburgh-food.jpg');
-    /* Adjust path if CSS is in css/ */
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
+
 
 /* --- Logo Standardization --- */
 .logo-standard {
@@ -168,19 +162,7 @@ h3,
 }
 
 /* Reverse Marquee for Reviews if desired, or just standard */
-.marquee-reverse .marquee-content {
-    animation: marquee-reverse 80s linear infinite;
-}
 
-@keyframes marquee-reverse {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 /* --- Manual Transform Classes (Polyfill for missing Tailwind classes) --- */
 .translate-x-0 {
