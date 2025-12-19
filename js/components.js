@@ -18,6 +18,7 @@ function loadFooter() {
                         <li><a href="catering.html" class="text-gray-300 hover:text-brand-teal">Catering</a></li>
                         <li><a href="patio.html" class="text-gray-300 hover:text-brand-teal">Patio</a></li>
                         <li><a href="events.html" class="text-gray-300 hover:text-brand-teal">Events</a></li>
+                        <li><a href="food-truck.html" class="text-gray-300 hover:text-brand-teal">Food Truck</a></li>
                         <li><a href="jobs.html" class="text-gray-300 hover:text-brand-teal">Jobs</a></li>
                         <li><a href="wine-mezze.html" class="text-gray-300 hover:text-purple-400">Wine & Mezze</a></li>
                         <li><a href="locations.html" class="text-gray-300 hover:text-brand-teal">Contact Us</a></li>
@@ -115,7 +116,7 @@ function loadHeader(activePage, theme = 'standard') {
                 <a href="locations.html" class="${getLinkClass('locations.html')}">Visit Us</a>
                 <a href="patio.html" class="${getLinkClass('patio.html')}">Patio</a>
                 <a href="events.html" class="${getLinkClass('events.html')}">Events</a>
-                <a href="jobs.html" class="${getLinkClass('jobs.html')}">Jobs</a>
+                <a href="food-truck.html" class="${getLinkClass('food-truck.html')}">Food Truck</a>
                 
                 <!-- Wine Bar Link -->
                 <a href="wine-mezze.html" class="${getWineLinkClass()}">
@@ -145,7 +146,7 @@ function loadHeader(activePage, theme = 'standard') {
             <a href="locations.html" class="block py-2 ${getLinkClass('locations.html')}">Visit Us</a>
             <a href="patio.html" class="block py-2 ${getLinkClass('patio.html')}">Patio</a>
             <a href="events.html" class="block py-2 ${getLinkClass('events.html')}">Events</a>
-            <a href="jobs.html" class="block py-2 ${getLinkClass('jobs.html')}">Jobs</a>
+            <a href="food-truck.html" class="block py-2 ${getLinkClass('food-truck.html')}">Food Truck</a>
             <a href="wine-mezze.html" class="block py-2 ${getWineLinkClass()}">Wine & Mezze Bar</a>
             <a href="https://pitamyshawarma.square.site/?location=J952PZN8F5KTY#DBDUDSBS4DE42IHGR6ZKKAPY"
                 target="_blank"
