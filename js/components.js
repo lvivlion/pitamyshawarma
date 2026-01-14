@@ -78,8 +78,8 @@ function loadHeader(activePage, theme = 'standard') {
         : 'text-white font-bold border-b-2 border-white'; // Standard active
 
     const mobileMenuClasses = isNight
-        ? 'hidden md:hidden px-6 pb-4 border-t border-purple-900/30 bg-[#0f0518]'
-        : 'hidden md:hidden px-6 pb-4 border-t border-white/20';
+        ? 'hidden md:hidden px-6 pb-4 border-t border-purple-900/30 bg-[#0f0518] text-center'
+        : 'hidden md:hidden px-6 pb-4 border-t border-white/20 text-center';
 
     // Helper to determine class for a link
     const getLinkClass = (page) => activePage === page ? activeLinkClasses : linkBaseClasses;
